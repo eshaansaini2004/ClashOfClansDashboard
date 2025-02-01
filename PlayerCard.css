@@ -1,0 +1,75 @@
+.player-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 300px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    position: relative;
+  }
+  
+  .player-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+    color: #ffcc00;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+  }
+  
+  .player-tag {
+    font-size: 0.85rem;
+    background-color: #ff5733;
+    padding: 0.2rem 0.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+  }
+  
+  .clan-name {
+    margin: 0.5rem 0 1rem 0;
+    font-size: 1rem;
+    color: #ffd700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .stats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  
+  .stat-item {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .stat-item label {
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  .stat-item span {
+    font-weight: 500;
+    color: #fff;
+  }
+  
+  .stat-item.attacks {
+    border-left: 4px solid #ffa500;
+    padding-left: 0.6rem;
+  }
+  
+  .stat-item.defenses {
+    border-left: 4px solid #33ff99;
+    padding-left: 0.6rem;
+  }

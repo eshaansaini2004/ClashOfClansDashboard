@@ -1,0 +1,60 @@
+.dashboard {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .dashboard h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .search-bar input {
+    width: 80%;
+    max-width: 500px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #ffd700;
+    border-radius: 8px;
+    outline: none;
+    background-color: #2a0043;
+    color: #ffd700;
+    text-align: center;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-bar input::placeholder {
+    color: #ffeb99;
+  }
+  
+  .search-bar input:focus {
+    border-color: #ff5733;
+    box-shadow: 0 0 8px rgba(255, 87, 51, 0.8);
+  }
+  
+  /* Player List Grid */
+  .player-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  @media (max-width: 1024px) {
+    .player-list {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .player-list {
+      grid-template-columns: 1fr; /* 1 card per row on small screens */
+    }
+  }
